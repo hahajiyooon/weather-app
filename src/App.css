@@ -1,15 +1,21 @@
-body{
-  background: url(https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg);
-  width: 100vh; /*화면의 100%*/
-  background-repeat: no-repeat;
-  background-size: cover;
+*{
+  cursor: url(./assets/cursor.png) 2 2, auto;
 }
 
+body{
+  width: 100vh; /*화면의 100%*/
+  background: url(https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+}
+
+
 .container{
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column; /*display: flex;로 가로정렬된 div들 세로로 바꿔주기*/
 }
 
@@ -17,6 +23,18 @@ body{
   border: 1px solid white;
   border-radius: 30px;
   background-color: white;
-  opacity: 0.6;
+  opacity: 0.7;
   padding: 30px;
+}
+.weather-button{
+  margin-right: 1px;
+}
+.weather-button:hover{
+  background: #bacee0;
+}
+.weather-button:active{
+  background: #bacee0;
+}
+.weather-button:visited{
+  background: #bacee0;
 }
