@@ -2,14 +2,12 @@ import React from 'react'
 
 const WeatherBox = ({weather}) => {
 
-  //console.log("weather?", weather)
+  console.log("WeatherBox에 왔는가")
   return (
-    <div className="weather-box">
-        <div>{weather?.name}</div>
-        <h1>{weather?.main.temp}°C / {weather?.main.temp*1.8+32} °F</h1>
-        <h2>{weather?.weather[0].description}</h2>
-
-
+    <div className="weather-box opacity-8">
+        <div className='margin-bottom-5'>{weather?.name}</div>
+        <h2>{Math.ceil(weather?.main.temp)}°C / {Math.ceil(weather?.main.temp*1.8+32)} °F</h2>
+        <h4>{weather?.weather[0].description}</h4>
     </div>
   )
 }

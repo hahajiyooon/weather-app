@@ -1,10 +1,11 @@
 *{
-  cursor: url(./assets/cursor.png) 2 2, auto;
+  cursor: url(./assets/galaxy.png) 2 2, auto;
 }
 
+
 body{
-  width: 100vh; /*화면의 100%*/
-  background: url(https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg);
+  height: 100vh; /*화면의 100%*/
+  background: url(https://images.unsplash.com/photo-1454177697940-c43d9f9a7307?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lato', sans-serif;
@@ -20,21 +21,24 @@ body{
 }
 
 .weather-box{
+  width: 365px;
+  height: 200px;
   border: 1px solid white;
   border-radius: 30px;
   background-color: white;
-  opacity: 0.7;
   padding: 30px;
+  margin-bottom: 5px;
+  text-align: center;
 }
-.weather-button{
-  margin-right: 1px;
+
+.btn-box{
+  margin: 1px;
 }
-.weather-button:hover{
-  background: #bacee0;
+
+.margin-bottom-5{
+  margin-bottom: 20px;
 }
-.weather-button:active{
-  background: #bacee0;
-}
-.weather-button:visited{
-  background: #bacee0;
+
+.opacity-8{
+  opacity: 0.8;
 }
